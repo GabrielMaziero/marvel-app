@@ -10,14 +10,22 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var viewModel = MarvelViewModel()
+    @State private var show_modal: Bool = false
+    
+    var columns: [GridItem] =
+        Array(repeating: .init(.fixed(500)), count: 1)
     
     var body: some View {
-        ScrollView{
-            LazyVGrid(columns: [GridItem(.fixed(160)),GridItem(.flexible())], spacing: 30, content: {
-                ForEach(viewModel.result, id: \.id){
-                    ItemListView(url: $0.thumbnail.url?.absoluteString, nameHero: $0.name)
+        NavigationView{
+            ScrollView{
+                VStack(alignment: .leading){
+                    ForEach(viewModel.result, id: \.id){
+                        ItemListView(hero: $0, showModal: show_modal)
+                            .padding(8.0)
+                    }
+                    .navigationTitle("Heroes")
                 }
-            }).padding()
+            }
         }
         .onAppear{
             self.viewModel.callFuncToGetMarvelData()
