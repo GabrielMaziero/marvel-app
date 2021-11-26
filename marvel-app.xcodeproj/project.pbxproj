@@ -78,7 +78,6 @@
 				70674AB8274EAE1E00B15572 /* View */,
 				703B0A55274D7ECE006A8476 /* ViewModel */,
 				70A70CDB274D143900C16D30 /* Model */,
-				702691A3274C48FB007D6F8B /* API Service */,
 				70269193274C4894007D6F8B /* marvel_appApp.swift */,
 				70269197274C489A007D6F8B /* Assets.xcassets */,
 				7026919C274C489A007D6F8B /* Info.plist */,
@@ -132,6 +131,7 @@
 		70A060F0274EBDB50086F43A /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				702691A3274C48FB007D6F8B /* API Service */,
 				70701B24274FC9E50009B2DA /* Utils */,
 				70A060FF274EC0F80086F43A /* AsyncImage.swift */,
 			);
