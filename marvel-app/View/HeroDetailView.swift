@@ -25,12 +25,12 @@ struct HeroDetailView: View {
         .frame(height: 450)
         VStack{
           Text(self.hero?.name ?? "Hero")
-            .foregroundColor(.black)
+            .foregroundColor(/*@START_MENU_TOKEN@*/Color("defaultText")/*@END_MENU_TOKEN@*/)
             .font(.largeTitle)
             .fontWeight(.bold)
             .frame(maxWidth: .infinity, maxHeight: 20,alignment: .leading)
           Text(self.hero?.marvelDataDescription ?? "Description hero")
-            .foregroundColor(.black)
+            .foregroundColor(/*@START_MENU_TOKEN@*/Color("defaultText")/*@END_MENU_TOKEN@*/)
             .font(.body)
             .fontWeight(.regular)
             .multilineTextAlignment(.leading)
@@ -47,6 +47,11 @@ struct HeroDetailView: View {
 
 struct HeroDetailView_Previews: PreviewProvider {
   static var previews: some View {
-    HeroDetailView()
+    Group {
+      HeroDetailView()
+        .preferredColorScheme(.light)
+      HeroDetailView()
+        .preferredColorScheme(.dark)
+    }
   }
 }
