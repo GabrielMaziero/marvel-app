@@ -124,6 +124,7 @@
 		70701B24274FC9E50009B2DA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				70A060FF274EC0F80086F43A /* AsyncImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -133,7 +134,6 @@
 			children = (
 				702691A3274C48FB007D6F8B /* API Service */,
 				70701B24274FC9E50009B2DA /* Utils */,
-				70A060FF274EC0F80086F43A /* AsyncImage.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";

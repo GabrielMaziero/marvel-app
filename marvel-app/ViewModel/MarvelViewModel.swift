@@ -8,15 +8,19 @@
 import Foundation
 
 class MarvelViewModel: ObservableObject {
-    private var apiService = APIService()
-    @Published var marvelData: MarvelData!
-    @Published var result: [Result] = []
-    
-    
-    func callFuncToGetMarvelData(){
-        self.apiService.getMarvelData{(marvelData) in
-            self.marvelData = marvelData
-            self.result = marvelData.dataClass.results
-        }
+  private var apiService = APIService()
+  private var offset: Int = 0
+  @Published var marvelData: MarvelData!
+  @Published var result: [Result] = []
+  
+  
+  func callFuncToGetMarvelData(_ nexPage: Int){
+    if nexPage > 0 {
+      offset += 20
     }
+    self.apiService.getMarvelData(offset: offset){(marvelData) in
+      self.marvelData = marvelData
+      self.result.append(contentsOf: marvelData.dataClass.results)
+    }
+  }
 }
