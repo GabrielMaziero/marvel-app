@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70117B1D275114520032568B /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70117B1C275114520032568B /* RoundedCorner.swift */; };
 		70269194274C4894007D6F8B /* marvel_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70269193274C4894007D6F8B /* marvel_appApp.swift */; };
 		70269196274C4894007D6F8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70269195274C4894007D6F8B /* ContentView.swift */; };
 		70269198274C489A007D6F8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70269197274C489A007D6F8B /* Assets.xcassets */; };
@@ -17,10 +18,10 @@
 		709B06A7274EC5E600D52BEF /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709B06A6274EC5E600D52BEF /* ItemListView.swift */; };
 		70A06100274EC0F80086F43A /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A060FF274EC0F80086F43A /* AsyncImage.swift */; };
 		70A70CDD274D144C00C16D30 /* MarvelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A70CDC274D144C00C16D30 /* MarvelData.swift */; };
-		70CEC12227501E5C00B8F7CF /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CEC12127501E5C00B8F7CF /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70117B1C275114520032568B /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		70269190274C4894007D6F8B /* marvel-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "marvel-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70269193274C4894007D6F8B /* marvel_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marvel_appApp.swift; sourceTree = "<group>"; };
 		70269195274C4894007D6F8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,7 +34,6 @@
 		709B06A6274EC5E600D52BEF /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		70A060FF274EC0F80086F43A /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		70A70CDC274D144C00C16D30 /* MarvelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelData.swift; sourceTree = "<group>"; };
-		70CEC12127501E5C00B8F7CF /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70117B16275114290032568B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70117B1C275114520032568B /* RoundedCorner.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		70269187274C4894007D6F8B = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +114,7 @@
 		70674AB8274EAE1E00B15572 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				70CEC12027501E3D00B8F7CF /* Components */,
+				70117B16275114290032568B /* Components */,
 				70269195274C4894007D6F8B /* ContentView.swift */,
 				709B06A6274EC5E600D52BEF /* ItemListView.swift */,
 				70701B33274FFC5C0009B2DA /* HeroDetailView.swift */,
@@ -136,14 +144,6 @@
 				70A70CDC274D144C00C16D30 /* MarvelData.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		70CEC12027501E3D00B8F7CF /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				70CEC12127501E5C00B8F7CF /* RoundedCorner.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +218,7 @@
 				70A70CDD274D144C00C16D30 /* MarvelData.swift in Sources */,
 				70269196274C4894007D6F8B /* ContentView.swift in Sources */,
 				702691A5274C4939007D6F8B /* APIService.swift in Sources */,
-				70CEC12227501E5C00B8F7CF /* RoundedCorner.swift in Sources */,
+				70117B1D275114520032568B /* RoundedCorner.swift in Sources */,
 				70701B34274FFC5C0009B2DA /* HeroDetailView.swift in Sources */,
 				703B0A57274D7EEB006A8476 /* MarvelViewModel.swift in Sources */,
 				70A06100274EC0F80086F43A /* AsyncImage.swift in Sources */,
@@ -281,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -336,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
