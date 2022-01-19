@@ -25,7 +25,7 @@ struct HeroDetailView: View {
         .frame(height: 450)
         VStack{
           Text(self.hero?.name ?? "Hero")
-            .foregroundColor(/*@START_MENU_TOKEN@*/Color("defaultText")/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color("defaultText"))
             .font(.largeTitle)
             .fontWeight(.bold)
             .frame(maxWidth: .infinity, maxHeight: 20,alignment: .leading)

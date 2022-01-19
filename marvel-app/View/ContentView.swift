@@ -11,6 +11,7 @@ struct ContentView: View {
   
   @ObservedObject var viewModel = MarvelViewModel()
   @State private var show_modal: Bool = false
+  @State private var search: String = ""
   @State var nextPage: Int = 1
   
   init() {
@@ -32,6 +33,7 @@ struct ContentView: View {
           }
       }
       .navigationTitle("Heroes")
+      Spacer()
     }
   }
 }
